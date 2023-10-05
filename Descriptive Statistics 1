@@ -1,4 +1,4 @@
---A SQL query Summarizing the Data of Numerical Columns
+--A SQL query Summarizing the Data of Numerical Columns from Film Table
 SELECT MIN(rental_duration) AS min_rental_duration,				
        MAX(rental_duration) AS max_rental_duration,				
        AVG(rental_duration) AS avg_rental_duration,				
