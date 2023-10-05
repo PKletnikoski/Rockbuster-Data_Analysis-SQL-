@@ -1,0 +1,10 @@
+--A SQL query Summarizing the Data of Non-Numerical columns from Film Table
+SELECT MODE() WITHIN GROUP (ORDER BY title ) AS modal_value_title,				
+	MODE() WITHIN GROUP (ORDER BY description) AS modal_value_description,			
+	MODE() WITHIN GROUP (ORDER BY release_year) AS modal_value_release_year,			
+	MODE() WITHIN GROUP (ORDER BY language_id) AS modal_value_language,			
+	MODE() WITHIN GROUP (ORDER BY rating) AS modal_value_rating,			
+	MODE() WITHIN GROUP (ORDER BY last_update) AS modal_value_last_update,			
+	MODE() WITHIN GROUP (ORDER BY special_features) AS modal_value_special_features,			
+	MODE() WITHIN GROUP (ORDER BY fulltext) AS modal_value_fulltext			
+FROM film				
