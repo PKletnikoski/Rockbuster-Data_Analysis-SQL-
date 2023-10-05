@@ -1,0 +1,7 @@
+--What was the average rental duration for all videos?
+SELECT				
+	COUNT(film_id) AS count_of_movies,			
+	AVG(rental_duration) AS average_rental_duration,			
+	MIN(rental_duration) AS minimum_rental_duration,			
+	MAX(rental_duration) AS maximum_rental_duration			
+FROM   film				
